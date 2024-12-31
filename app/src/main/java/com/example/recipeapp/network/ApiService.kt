@@ -1,6 +1,6 @@
 package com.example.recipeapp.network
 
-import com.example.recipeapp.CategoriesResponse
+import com.example.recipeapp.data.CategoriesResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
