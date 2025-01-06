@@ -1,7 +1,13 @@
 package com.example.recipeapp.ui.screens
 
-sealed class Screen(val route: String) {
+import com.example.recipeapp.data.Category
+import kotlinx.serialization.Serializable
 
-    object RecipeScreen : Screen("recipescreen")
-    object CategoryDetailScreen : Screen("categorydetailscreen")
+@Serializable
+sealed class Screen {
+
+    @Serializable
+    data object RecipeScreen : Screen()
+    @Serializable
+    data class CategoryDetailScreen(val category: Category) : Screen()
 }

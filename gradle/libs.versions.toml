@@ -15,7 +15,6 @@ composeBom = "2024.04.01"
 lifecycleViewmodelComposeWasmJs = "2.9.0-alpha01"
 navigationCompose = "2.8.5"
 retrofit = "2.0.0-beta2"
-kotlinPlugin = "1.9.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -45,6 +44,6 @@ retrofit = { module = "com.squareup.retrofit:retrofit", version.ref = "retrofit"
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize",  version.ref = "kotlinPlugin"  }
+jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 
 
