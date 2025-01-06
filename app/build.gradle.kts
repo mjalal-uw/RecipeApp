@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.parcelize)
+
 }
 
 android {
@@ -41,7 +43,12 @@ android {
 
 dependencies {
 
-    //Compose ViewModel
+    implementation(libs.kotlinx.serialization.json) //
+
+    //Navigation
+    implementation(libs.androidx.navigation.compose)
+
+    // Compose ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
     //Network calls
